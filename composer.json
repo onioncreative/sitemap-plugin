@@ -1,0 +1,19 @@
+{
+    "name": "onioncreative/sitemap-plugin",
+    "type": "october-plugin",
+    "description": "Allows you to edit sitemap item and generate a sitemap file automatically, continously by a schedule.",
+    "license": "MIT",
+    "homepage": "https://github.com/kelvinleehk/sitemap-plugin",
+    "keywords": ["sitemap", "octobercms"],
+    "authors": [
+        {
+            "name": "Joe Lam",
+            "email": "joelam@onioncreative.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1.0"
+    }
+}

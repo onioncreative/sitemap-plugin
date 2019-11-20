@@ -1,0 +1,39 @@
+fields:
+    sitemap_section:
+        type: section
+        label: onioncreative.sitemap::lang.settings.sitemap_section_label
+    sitemap:
+        type: repeater
+        prompt: onioncreative.sitemap::lang.settings.sitemap_prompt
+        titleFrom: page
+        form:
+            fields:
+                page:
+                    label: onioncreative.sitemap::lang.settings.page
+                    span: full
+                    required: 1
+                    type: dropdown
+                    options: getPagesOptions
+                change_frenquency:
+                    label: onioncreative.sitemap::lang.settings.change_frenquency
+                    span: auto
+                    required: 1
+                    type: dropdown
+                    default: always
+                    options: getChangeFrequencyOptions
+                priority:
+                    label: onioncreative.sitemap::lang.settings.priority
+                    span: auto
+                    required: 1
+                    type: dropdown
+                    default: '0.5'
+                    options: getPriorityOptions
+                last_modify:
+                    label: onioncreative.sitemap::lang.settings.last_modify
+                    span: full
+                    required: 1
+                    type: datepicker
+                    mode: datetime
+                    format: 'Y-m-d'
+                    default: now
+                    ignoreTimezone: true
